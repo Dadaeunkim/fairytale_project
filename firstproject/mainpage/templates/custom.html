@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>커스텀 동화</title>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href='{% static "css/custom.css" %}' rel="stylesheet" />
+        
+    </head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <body id="page-top">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+          </style>
+        
+        <body>
+            <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+            <form action="../custompage1/" method="get">
+            <h1>커스텀 동화</h1>
+            
+            <div class="row">
+                <input id="custom_title" type="text" name="custom_title"/>
+                <label for="custom_title">소설 제목</label>
+            </div>
+            
+            <div class="row">
+                <textarea id="custom_text" type="text" name="custom_text"></textarea>
+                <label for="custom_text">소설 텍스트</label>
+            </div>
+            
+            <input type="submit" value="만들기">
+            </form>
+        </body>
+
+       
+        <script src='{% static "js/custom.js" %}'></script>
+                    
+
+
+    </body>

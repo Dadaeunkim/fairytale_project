@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='{% static "css/singlepage.css" %}' rel="stylesheet" /> 
+    </head>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <body>
+        <nav>
+            <h4><a href="../">홈으로 가기</a><h4>
+        </nav>
+        <div class='book'> 
+            <div id='page-1' class='page no-anim'>    
+              <div class='side-1' id='p1'>
+                <div class='content'>
+                  <h1>{{ title }}</h1> <!--제목-->
+                </div><!-- .content -->
+              </div><!-- .side-1 -->    
+              <div class='side-2' id='p2'>      
+                <div class='content'>
+                  <p>{{ split1 }}</p>
+                </div><!-- .content -->
+              </div><!-- .side-2 -->
+            </div><!-- .page -->
+            
+            <div id='page-2' class='page no-anim'>    
+              <div class='side-1' id='p3'>
+                <div class='content'>
+                  <img src="{{ img1 }}" style='width: 340px; height: 440px;'>
+                </div><!-- .content -->
+              </div><!-- .side-1 -->    
+              <div class='side-2' id='p4'>      
+                <div class='content'>
+                  <p>{{ split2 }}</p>
+                </div><!-- .content -->
+              </div><!-- .side-2 -->
+            </div><!-- #page-2 -->
+            <div id='page-3' class='page no-anim'>    
+              <div class='side-1' id='p5'>
+                <div class='content'>
+                  <img src="{{ img2 }}" style='width: 340px; height: 440px;'>
+                  
+                </div><!-- .content -->
+              </div><!-- .side-1 -->    
+              <div class='side-2' id='p6'>      
+                <div class='content'>
+                  <p>{{ split3 }}</p>
+                </div><!-- .content -->
+              </div><!-- .side-2 -->
+            </div><!-- #page-3 -->
+            
+            <div id='page-4' class='page no-anim'>    
+              <div class='side-1' id='p7'>
+                <div class='content'>
+                  <img src="{{ img3 }}" style='width: 340px; height: 440px;'>
+                </div><!-- .content -->
+              </div><!-- .side-1 -->    
+              <div class='side-2' id='p8'>      
+                <div class='content'>
+                  <p>{{split4}}</p>
+                </div><!-- .content -->
+              </div><!-- .side-2 -->
+            </div><!-- #page-4 -->
+        
+            <div id='page-5' class='page no-anim'>    
+                <div class='side-1' id='p9'>
+                  <div class='content'>
+                    <img src="{{ img4 }}" style='width: 340px; height: 440px;'>
+                  </div><!-- .content -->
+                </div><!-- .side-1 -->    
+                <div class='side-2' id='p10'>      
+                  <div class='content'>
+                    <p>{{split5}}</p>
+                  </div><!-- .content -->
+                </div><!-- .side-2 -->
+              </div><!-- #page-4 -->
+            
+            <div id='page-6' class='page no-anim'>    
+                <div class='side-1' id='p11'>
+                  <div class='content'>
+                    <img src="{{ img5 }}" style='width: 340px; height: 440px;'>
+                  </div><!-- .content -->
+                </div><!-- .side-1 -->    
+                <div class='side-2' id='p12'>      
+                  <div class='content'>
+                    <p>{{split6}}</p>
+                  </div><!-- .content -->
+                </div><!-- .side-2 -->
+              </div><!-- #page-4 -->
+            <div id='page-7' class='page no-anim'>    
+              <div class='side-1' id='p11'>
+                <div class='content'>
+                  <img src="{{ img6 }}" style='width: 340px; height: 440px;'>
+                  </div><!-- .content -->
+              </div><!-- .side-1 -->    
+                <div class='side-2' id='p12'>      
+                    <div class='content'>
+                      <p>{{ split7 }}</p>
+                </div><!-- .content -->
+            </div><!-- .side-2 -->
+            </div><!-- #page-4 -->
+            <div id='page-8' class='page no-anim'>    
+                <div class='side-1' id='p11'>
+                  <div class='content'>
+                    <img src="{{ img7 }}" style='width: 340px; height: 440px;'>
+                  </div><!-- .content -->
+                </div><!-- .side-1 -->    
+                <div class='side-2' id='p12'>      
+                  <div class='content'>
+                    <h1>끝</h1>
+                  </div><!-- .content -->
+                </div><!-- .side-2 -->
+              </div><!-- #page-4 -->
+          </div>
+
+        <script src='{% static "js/singlepage.js" %}'></script>
+    </body>
+    
+</html>
